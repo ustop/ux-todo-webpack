@@ -1,0 +1,22 @@
+<div class="todo">
+  <div class="row">
+    <div class="columns">
+      <h1>
+        Todo
+      </h1>
+      <input type="text" value="{{newTodo}}" placeholder="What do you want to do?" on-change="handleInputChange(event)"/>
+    </div>
+  </div>
+  <div class="row">
+    <fieldset class="columns">
+      {{#todoEntities:todo}}
+        <div class="todo-row">
+          <input type="checkbox" checked="{{isDone}}" id="{{todo}}" on-click="handleToggleTodo(event)">
+          <label for="{{todo}}">
+            <h5>{{label}}</h5>
+          </label>
+        </div>
+      {{/todoEntities}}
+    </fieldset>
+  </div>
+</div>

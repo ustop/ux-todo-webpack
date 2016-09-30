@@ -1,0 +1,25 @@
+.todo {
+  h1 {
+    color: #444;
+  }
+  .todo-row {
+    padding-top:1rem;
+    padding-bottom:1rem;
+    label, input {
+      display: inline-block;
+    }
+
+    input + label {
+      margin-left: 1rem;
+    }
+
+    border-bottom: 1px solid #ccc;
+  }
+  input[type='checkbox']:checked + label {
+
+    h5 {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+  }
+}
